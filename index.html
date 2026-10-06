@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Interactive SDLC Vocabulary Builder — ADSO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="topbar__brand"><span class="dot"></span> ADSO / SDLC · Bilingual Terms</div>
+      <nav class="pipeline" id="pipeline"></nav>
+      <button class="topbar__guide-btn" id="guide-btn">🔤 Guía fonética</button>
+    </header>
+
+    <main id="app-main"></main>
+
+    <footer class="credits">SENA · Centro Industrial y del Desarrollo Tecnológico — Evidencia de Aprendizaje ADSO</footer>
+  </div>
+
+  <!-- Guía fonética: overlay accesible en cualquier punto de la actividad -->
+  <div class="overlay hidden" id="guide-overlay">
+    <div class="overlay__panel">
+      <h2>Guía fonética rápida</h2>
+      <p style="color:var(--muted); margin-top:-10px;">Símbolos IPA (International Phonetic Alphabet) usados en esta actividad.</p>
+      <div class="guide-grid" id="guide-grid"></div>
+      <button class="btn btn--ghost" id="guide-close">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Módulos de datos (edítalos para reutilizar esta plantilla con otro glosario) -->
+  <script src="js/data.js"></script>
+  <script src="js/quizzes.js"></script>
+  <!-- Motor de la aplicación (genérico, no necesita cambios) -->
+  <script src="js/app.js"></script>
+</body>
+</html>
